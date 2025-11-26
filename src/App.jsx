@@ -1,8 +1,13 @@
 import React from 'react'
+import { Navbar, Welcome, Dock } from './components'
 
 const App = () => {
   return (
-    <div><h1 className='text-3xl font-bold underline'>Welcome to Anirudh's Portfolio</h1></div>
+    <main>
+        <Navbar />
+        <Welcome />
+        <Dock />
+    </main>
   )
 }
 
