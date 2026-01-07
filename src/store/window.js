@@ -7,16 +7,24 @@ const useWindowStore = create(
         windows: WINDOW_CONFIG,
         nextZIndex: INITIAL_Z_INDEX+1, 
 
-        openWindow: (windowKey, data=null) => set((state) => {
-            const win = state.windows[windowKey];
-            if (!win) return;
-  
-            win.isOpen = true;
-            win.zIndex = state.nextZIndex;
-            win.data = data ?? win;
-            state.nextZIndex++;
-
-        }),
+        openWindow: (windowKey, data=null) => {
+            console.log(`openWindow called with windowKey: ${windowKey}, data:`, data);
+            set((state) => {
+                const win = state.windows[windowKey];
+                if (!win) {
+                    console.error(`Window with key '${windowKey}' not found in windows config`);
+                    return;
+                }
+    
+                win.isOpen = true;
+                win.zIndex = state.nextZIndex;
+                win.data = data || {};
+                state.nextZIndex++;
+                
+                console.log(`Updated window '${windowKey}' state:`, win);
+                return state;
+            });
+        },
         closeWindow: (windowKey) => set((state) => {
             const win = state.windows[windowKey];
             if (!win) return;

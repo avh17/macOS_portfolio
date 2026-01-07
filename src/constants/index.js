@@ -49,7 +49,7 @@ const dockApps = [
     canOpen: true,
   },
   {
-    id: "photos",
+    id: "gallery",
     name: "Gallery", // was "Photos"
     icon: "photos.png",
     canOpen: true,
@@ -501,6 +501,7 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  gallery: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

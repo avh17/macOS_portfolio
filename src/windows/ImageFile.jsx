@@ -1,35 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import WindowWrapper from '#hoc/WindowWrapper';
 import { WindowControls } from '#components';
 import useWindowStore from '#store/window';
 
-const ImageFile = () => {
-  // Get the image file data from the window store
-  const data = useWindowStore((state) => state.windows.imgfile?.data);
+const ImageFile = (props) => {
+  // Get the window data from the store
+  const windowData = useWindowStore((state) => state.windows.imgfile?.data) || props.data || {};
 
-  if (!data) return null;
+  // Debug logging
+  useEffect(() => {
+    console.log('ImageFile mounted with props:', props);
+    console.log('ImageFile windowData:', windowData);
+  }, [props, windowData]);
+
+  if (!windowData || !windowData.imageUrl) {
+    console.log('No image data available, returning null');
+    return (
+      <div className="flex flex-col h-full bg-white">
+        <div className="flex items-center justify-center h-full">
+          <p>No image to display</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col h-full bg-white">
-      <div id="window-header" className="flex-shrink-0">
+      <div id="window-header" className="flex-shrink-0 flex items-center border-b border-gray-200 bg-gray-50 h-8">
         <WindowControls target="imgfile" />
         <h2 className="text-sm font-medium truncate px-2">
-          {data.name || 'Untitled Image'}
+          {windowData.name || 'Untitled Image'}
         </h2>
       </div>
 
       <div className="flex-1 p-4 overflow-auto flex items-center justify-center bg-gray-50">
-        {data.imageUrl ? (
-          <div className="max-w-full max-h-full flex items-center justify-center">
-            <img 
-              src={data.imageUrl} 
-              alt={data.name || 'Image'} 
-              className="max-w-full max-h-full object-contain"
-            />
-          </div>
-        ) : (
-          <div className="text-gray-400">No image to display</div>
-        )}
+        <div className="max-w-full max-h-full flex items-center justify-center">
+          <img 
+            src={windowData.imageUrl} 
+            alt={windowData.name || 'Image'} 
+            className="max-w-full max-h-full object-contain"
+            onLoad={() => console.log('Image loaded successfully')}
+            onError={(e) => console.error('Error loading image:', e)}
+          />
+        </div>
       </div>
 
       <style jsx>{`
