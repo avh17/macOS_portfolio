@@ -76,26 +76,26 @@ const dockApps = [
 
 const blogPosts = [
   {
-    id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    id: 2,
+    date: "Jan 4, 2026",
+    title: "LLM Context Management",
+    image: "/images/blog2.png",
+    link: "https://www.linkedin.com/posts/anirudhherady_youve-reached-the-maximum-length-for-this-activity-7413784839528755200-q4Ea?utm_source=share&utm_medium=member_desktop&rcm=ACoAADE8AZIBuMKFlFuyZ17i7YwF0QUJQYJcncg",
   },
   {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    id: 1,
+    date: "Jan 3, 2026",
+    title:
+      "Prompting 101",
+    image: "/images/blog1.png",
+    link: "https://www.linkedin.com/posts/anirudhherady_when-i-prompt-aii-aim-a-i-m-actor-activity-7413306851804774400--cqr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADE8AZIBuMKFlFuyZ17i7YwF0QUJQYJcncg",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
+    date: "July 5, 2025",
+    title: "FastAPI for Scalable AI Microservices",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "https://www.linkedin.com/posts/anirudhherady_fastapi-for-scalable-ai-microservices-building-activity-7352985348257275905-v5NW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADE8AZIBuMKFlFuyZ17i7YwF0QUJQYJcncg",
   },
 ];
 
@@ -132,28 +132,28 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/avh17",
   },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
+  // {
+  //   id: 2,
+  //   text: "Email",
+  //   icon: "/icons/atom.svg",
+  //   bg: "#4bcb63",
+  //   link: "aherady@asu.edu",
+  // },
+  // {
+  //   id: 3,
+  //   text: "Phone",
+  //   icon: "/icons/twitter.svg",
+  //   bg: "#ff866b",
+  //   link: "(602) 793-8590",
+  // },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/anirudhherady/",
   },
 ];
 
