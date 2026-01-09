@@ -43,7 +43,7 @@ const WindowWrapper = (Component, windowKey) => {
         ref={ref}
         style={{zIndex}}
         className='absolute'>
-            <Component {...props} />
+            <Component {...props} {...windows[windowKey]} />
         </section>
     )
   }
