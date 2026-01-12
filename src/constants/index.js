@@ -334,7 +334,7 @@ const WORK_LOCATION = {
     },
     {
       id: 8,
-      name: "RockyBot: News Research Tool 📈",
+      name: "RockyBot: News Research Tool",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-70",
@@ -369,6 +369,31 @@ const WORK_LOCATION = {
           href: "https://equityresearch-evti.onrender.com",
           position: "top-40 left-50",
         }
+      ],
+    },
+    {
+      id: 9,
+      name: "Work Experience",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-72 right-40",
+      windowPosition: "top-[50vh] right-7",
+      children: [
+        {
+          id: 1,
+          name: "Work Experience.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "Software Intern, Potters Tech (Jul. 2025 – Aug. 2025)",
+            "During my internship at Potters Tech, I engineered and shipped a full-stack Location Intelligence Chatbot that enabled non-technical users to query complex geospatial data without requiring analyst support. I architected a Retrieval-Augmented Generation pipeline that combined database retrieval with LLM synthesis, significantly improving response relevance through fine-tuned context injection strategies. The system integrated OpenStreetMap data and location APIs to power real-time Point of Interest search capabilities across extensive geographic coverage.",
+            "Associate Software Developer, Valtech India (Aug. 2022 – Sept. 2023)",
+            "At Valtech India, I designed and deployed multiple FastAPI microservices and numerous REST/GraphQL endpoints to support a multi-tenant video streaming platform with high availability for concurrent media consumption. I optimized deployment pipelines by implementing Docker multi-stage builds, substantially reducing container image sizes and accelerating build velocity. My work included designing normalized PostgreSQL schemas and MongoDB collections with compound indexes for optimal query performance, implementing robust role-based access control using JWT and OAuth2, and conducting code reviews while leading onboarding sessions for junior developers to maintain code quality standards."
+          ],
+        },
+
       ],
     }
   ],
