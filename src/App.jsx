@@ -21,7 +21,7 @@ const App = () => {
       <Terminal />
       <Safari />
       <FinderWindow />
-      <Resume />
+      {/* <Resume /> */}
       <TextFile />
       {windows.imgfile?.isOpen && <ImageFile />}
       <Contact />

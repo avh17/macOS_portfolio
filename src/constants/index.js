@@ -9,11 +9,11 @@ const navLinks = [
     name: "Contact",
     type: "contact",
   },
-  {
-    id: 4,
-    name: "Resume",
-    type: "resume",
-  },
+  // {
+  //   id: 4,
+  //   name: "Resume",
+  //   type: "resume",
+  // },
 ];
 
 const navIcons = [
@@ -388,7 +388,7 @@ const WORK_LOCATION = {
           position: "top-5 right-10",
           description: [
             "Software Intern, Potters Tech (Jul. 2025 – Aug. 2025)",
-            "During my internship at Potters Tech, I engineered and shipped a full-stack Location Intelligence Chatbot that enabled non-technical users to query complex geospatial data without requiring analyst support. I architected a Retrieval-Augmented Generation pipeline that combined database retrieval with LLM synthesis, significantly improving response relevance through fine-tuned context injection strategies. The system integrated OpenStreetMap data and location APIs to power real-time Point of Interest search capabilities across extensive geographic coverage.",
+            "During my internship at Potters Tech, I engineered and shipped the backend for a Location Intelligence Chatbot that enabled non-technical users to query complex geospatial data without requiring analyst support. I architected a Retrieval-Augmented Generation pipeline that combined database retrieval with LLM synthesis, significantly improving response relevance through fine-tuned context injection strategies. The system integrated OpenStreetMap data and location APIs to power real-time Point of Interest search capabilities across extensive geographic coverage.",
             "Associate Software Developer, Valtech India (Aug. 2022 – Sept. 2023)",
             "At Valtech India, I designed and deployed multiple FastAPI microservices and numerous REST/GraphQL endpoints to support a multi-tenant video streaming platform with high availability for concurrent media consumption. I optimized deployment pipelines by implementing Docker multi-stage builds, substantially reducing container image sizes and accelerating build velocity. My work included designing normalized PostgreSQL schemas and MongoDB collections with compound indexes for optimal query performance, implementing robust role-based access control using JWT and OAuth2, and conducting code reviews while leading onboarding sessions for junior developers to maintain code quality standards."
           ],
@@ -427,8 +427,8 @@ const ABOUT_LOCATION = {
       description: [
         "Hey! I’m Anirudh 👋",
         "A Software engineer who loves building systems that turn complex problems into seamless user experiences.",
-        "What excites me most is solving real problems end-to-end. I thrive at the intersection of full stack development, cloud infrastructure and intelligent AI solutions.",
-        "Currently completing my M.S. in Computer Science at Arizona State University (May 2026), I'm eager to bring my full-stack and AI/ML expertise to a team tackling ambitious technical challenges. I'm particularly drawn to backend systems, cloud architecture, and building AI-powered products that create genuine user impact.",
+        "What excites me most is solving real problems end-to-end. I thrive at the intersection of backend development, cloud infrastructure and intelligent AI solutions.",
+        "Currently completing my M.S. in Computer Science at Arizona State University (May 2026), I'm eager to bring my backend and AI/ML expertise to a team tackling ambitious technical challenges. I'm particularly drawn to backend systems, cloud architecture, and building AI-powered products that create genuine user impact.",
       ],
     },
   ],
@@ -484,7 +484,7 @@ const TRASH_LOCATION = {
 export const locations = {
   work: WORK_LOCATION,
   about: ABOUT_LOCATION,
-  resume: RESUME_LOCATION,
+  // resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
 
