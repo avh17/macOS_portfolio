@@ -232,8 +232,8 @@ const WORK_LOCATION = {
       name: "My Store-Cloud Storage",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-0 left-0", // icon position inside Finder
+      windowPosition: "top-[0vh] left-1", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -268,66 +268,33 @@ const WORK_LOCATION = {
       ],
     },
 
-    // ▶ Project 2
-    
-    {
-      id: 6,
-      name: "aws-serverless-facerecognition",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-50 right-10",
-      windowPosition: "top-[33vh] left-7",
-      children: [
-        {
-          id: 1,
-          name: "aws-serverless-facerecognition.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "This project implements a serverless face recognition service using AWS Lambda, SQS, and ECR. The application provides face recognition as a service on video frames streamed from clients (e.g., security cameras) using a multi-stage pipeline.",
-          ],
-        },
-        {
-          id: 2,
-          name: "github/aws-serverless-facerecognition",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/avh17/aws-serverless-facerecognition",
-          position: "top-10 right-20",
-        }
-      ],
-    },
-
     // ▶ Project 3
     {
       id: 7,
-      name: "aws-serverful-facerecognition",
+      name: "distributed-face-recognition",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
-      windowPosition: "top-[50vh] left-1",
+      position: "top-50 left-50",
+      windowPosition: "top-[35vh] left-1",
       children: [
         {
           id: 1,
-          name: "aws-serverful-facerecognition.txt",
+          name: "distributed-face-recognition.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This project implements an elastic face recognition application leveraging Amazon Web Services (AWS) Infrastructure as a Service (IaaS) resources. The application is designed to dynamically scale based on demand, processing face recognition requests from users efficiently.",
+            "Built serverless (Lambda + SQS + ECR) and serverful (EC2 + SQS + S3) face recognition systems to benchmark cost and latency tradeoffs. Achieved sub-second detection via an event-driven SQS pipeline that auto-scaled from 0 to 15 Lambda instances ondemand.",
           ],
         },
         {
           id: 2,
-          name: "github/aws-serverful-facerecognition",
+          name: "github/aws-video-facerecognition",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/avh17/aws-serverful-facerecognition",
+          href: "https://github.com/avh17/aws-video-facerecognition/tree/main",
           position: "top-10 right-20",
         }
       ],
@@ -337,8 +304,8 @@ const WORK_LOCATION = {
       name: "RockyBot: News Research Tool",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-70",
-      windowPosition: "top-[20vh] right-7",
+      position: "top-0 right-0",
+      windowPosition: "top-[35vh] right-1",
       children: [
         {
           id: 1,
@@ -376,8 +343,8 @@ const WORK_LOCATION = {
       name: "Work Experience",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-72 right-40",
-      windowPosition: "top-[50vh] right-7",
+      position: "top-50 right-0",
+      windowPosition: "top-[0vh] right-200",
       children: [
         {
           id: 1,
@@ -394,6 +361,96 @@ const WORK_LOCATION = {
           ],
         },
 
+      ],
+    },
+    {
+      id: 10,
+      name: "scalable-data-processing-pipeline",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-50 left-0",
+      windowPosition: "top-[70vh] right-1",
+      children: [
+        {
+          id: 1,
+          name: "scalable-data-processing-pipeline.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Architected a Kubernetes pipeline orchestrating 4 containerized services — Kafka, Zookeeper, Neo4j, and Kafka Connect. Streamed live document data through Kafka into Neo4j, enabling near-real-time ingestion and graph relationship analysis across 1,000 nodes.",
+          ],
+        },
+        {
+          id: 2,
+          name: "github/scalable-data-processing-pipeline",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/avh17/scalable-data-processing-pipeline",
+          position: "top-10 right-20",
+        }
+      ],
+    },
+    {
+      id: 11,
+      name: "semantic-video-search",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-100 left-100",
+      windowPosition: "top-[0vh] right-1",
+      children: [
+        {
+          id: 1,
+          name: "semantic-video-search.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Built a semantic search engine for Reels/TikToks using OpenAI vector embeddings over Whisper-transcribed audio. Engineered an ingestion pipeline with audio extraction, speech-to-text, and vector embedding with per-step failurerecovery.",
+          ],
+        },
+        {
+          id: 2,
+          name: "github/semantic-video-search",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/avh17/semantic-video-search",
+          position: "top-10 right-20",
+        }
+      ],
+    },
+    {
+      id: 12,
+      name: "Nvidia-Deep-Research-Agent",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-100 left-0",
+      windowPosition: "top-[70vh] left-1",
+      children: [
+        {
+          id: 1,
+          name: "Nvidia-Deep-Research-Agent.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Implemented an autonomous AI research agent using NVIDIA AI-Q that breaks complex questions into sub-tasks, searches multiple sources in parallel, and generates cited reports automatically. Integrated RAG with live web search using NVIDIA Nemotron and Tavily, prioritizing internal documents while falling back to real-time internet data.",
+          ],
+        },
+        {
+          id: 2,
+          name: "github/Nvidia-Deep-Research-Agent",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/avh17/Nvidia-Deep-Research-Agent",
+          position: "top-10 right-20",
+        }
       ],
     }
   ],
