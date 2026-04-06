@@ -452,6 +452,45 @@ const WORK_LOCATION = {
           position: "top-10 right-20",
         }
       ],
+    },
+    {
+      id: 13,
+      name: "multi-agent-research",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-0 right-50",
+      windowPosition: "top-[0vh] right-100",
+      children: [
+        {
+          id: 1,
+          name: "multi-agent-research.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "A multi-agent research engine that leverages AI agents to conduct comprehensive research on any topic. The system orchestrates multiple specialized agents working in parallel to gather, analyze, and synthesize information from various sources.",
+          ],
+        },
+        {
+          id: 2,
+          name: "github/multi-agent-research",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/avh17/multi-agent-research",
+          position: "top-10 right-20",
+        },
+        {
+          id: 3,
+          name: "multi-agent-research.vercel.app",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://multi-agent-research-engine.vercel.app",
+          position: "top-40 left-50",
+        }
+      ],
     }
   ],
 };
