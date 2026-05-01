@@ -300,45 +300,6 @@ const WORK_LOCATION = {
       ],
     },
     {
-      id: 8,
-      name: "RockyBot: News Research Tool",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-0 right-0",
-      windowPosition: "top-[35vh] right-1",
-      children: [
-        {
-          id: 1,
-          name: "RockyBot: News Research Tool.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 right-10",
-          description: [
-            "RockyBot is an AI-powered news research tool that allows you to extract information and get answers from multiple news articles using Google's Gemini models. Simply provide URLs to news articles, and RockyBot will process them to create a searchable knowledge base, then answer your questions based on the content of those articles.",
-          ],
-        },
-        {
-          id: 2,
-          name: "github/rockybot",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://github.com/avh17/equityResearch",
-          position: "top-20 left-20",
-        },
-        {
-          id: 3,
-          name: "rockybot.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://equityresearch-evti.onrender.com",
-          position: "top-40 left-50",
-        }
-      ],
-    },
-    {
       id: 9,
       name: "Work Experience",
       icon: "/images/folder.png",
@@ -414,6 +375,15 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
+          name: "semantic-video-search.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://semantic-video-search-rouge.vercel.app/",
+          position: "top-10 right-0",
+        },
+        {
+          id: 3,
           name: "github/semantic-video-search",
           icon: "/images/safari.png",
           kind: "file",
