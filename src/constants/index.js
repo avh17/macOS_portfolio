@@ -398,7 +398,7 @@ const WORK_LOCATION = {
       name: "Nvidia-Deep-Research-Agent",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-100 left-0",
+      position: "top-90 left-0",
       windowPosition: "top-[70vh] left-1",
       children: [
         {
