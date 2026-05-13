@@ -389,7 +389,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/avh17/semantic-video-search",
-          position: "top-10 right-20",
+          position: "top-50 right-100",
         }
       ],
     },
@@ -461,7 +461,42 @@ const WORK_LOCATION = {
           position: "top-40 left-50",
         }
       ],
-    }
+    },
+    {
+     id: 14,
+     type: "about",
+     name: "About me",
+     icon: "/icons/info.svg",
+     kind: "folder",
+     windowPosition: "top-[60vh] left-150",
+     children: [
+      {
+        id: 1,
+        name: "me.png",
+        icon: "/images/anirudh.jpeg",
+        kind: "file",
+        fileType: "img",
+        position: "top-10 left-5",
+        imageUrl: "/images/anirudh.jpeg",
+      },
+      {
+        id: 2,
+        name: "about-me.txt",
+        icon: "/images/txt.png",
+        kind: "file",
+        fileType: "txt",
+        position: "top-60 left-5",
+        subtitle: "Meet the Developer Behind the Code",
+        image: "/images/anirudh.jpeg",
+        description: [
+          "Hey! I’m Anirudh 👋",
+          "A Software engineer who loves building systems that turn complex problems into seamless user experiences.",
+          "What excites me most is solving real problems end-to-end. I thrive at the intersection of backend development, cloud infrastructure and intelligent AI solutions.",
+          "Currently completing my M.S. in Computer Science at Arizona State University (May 2026), I'm eager to bring my backend and AI/ML expertise to a team tackling ambitious technical challenges. I'm particularly drawn to backend systems, cloud architecture, and building AI-powered products that create genuine user impact.",
+        ],
+      },
+    ],
+  }
   ],
 };
 
