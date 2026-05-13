@@ -466,7 +466,7 @@ const WORK_LOCATION = {
      id: 14,
      type: "about",
      name: "About me",
-     icon: "/icons/info.svg",
+     icon: "/images/folder.png",
      kind: "folder",
      windowPosition: "top-[60vh] left-150",
      children: [
