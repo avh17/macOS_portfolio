@@ -15,18 +15,30 @@ const Home = () => {
     setActiveLocation(project);
     openWindow("finder");
   }
+
+  const handleOpenAboutMe = () => {
+    setActiveLocation(locations.about);
+    openWindow("finder");
+  }
+
   useGSAP(() => {
     Draggable.create(".folder");
   }, [])
 
   return (
     <section id="home">
-      <ul>{projects.map((project) => (
-        <li key={project.id} className={clsx("group folder", project.windowPosition)} onClick={() => handleOpenProjectFinder(project)}>
-            <img src="/images/folder.png" alt={project.name}/>
-            <p>{project.name}</p>
+      <ul>
+        <li className={clsx("group folder", locations.about.windowPosition)} onClick={handleOpenAboutMe}>
+          <img src="/images/folder.png" alt={locations.about.name}/>
+          <p>{locations.about.name}</p>
         </li>
-      ))}</ul>
+        {projects.map((project) => (
+          <li key={project.id} className={clsx("group folder", project.windowPosition)} onClick={() => handleOpenProjectFinder(project)}>
+              <img src="/images/folder.png" alt={project.name}/>
+              <p>{project.name}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }
